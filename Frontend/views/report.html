@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/report.css">
+
+</head>
+<div class="bg">
+    
+
+
+    <body class="body"><br><br><br><br>
+        
+        <h1>Report</h1>
+        <div class="report-list" id="report">
+            <ul class="list-heading">
+                <li class="heading_item">Time</li>
+                <li class="heading_item">Description</li>
+                <li class="heading_item">Category</li>
+                <li class="heading_item"> Amount</li>
+            </ul>
+            <div id="report-expenses">
+
+            </div>
+            <div id="report-total">
+
+            </div>
+            
+           
+        </div>
+        
+        <button class="download" id="down-report">Download Report</button>
+        <div class="dynamic">
+            <label for="dyn-pagination">Rows per Page</label>
+            <input type="number" id="no-of-items" value="10">
+            <div id="pagination" class="pagination"></div>
+        </div>
+
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0/axios.min.js"></script>
+        <script src="../js/report.js"></script>
+        
+
+    </body>
+</div>
+
+</html>

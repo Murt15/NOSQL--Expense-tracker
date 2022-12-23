@@ -1,0 +1,64 @@
+.report-list{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+.report-list h2{
+    position: relative;
+    left: 60%;
+}
+.list-heading{
+    border: 1px solid black;
+    list-style: none;
+    display: flex;
+    margin: 0%;
+    text-align: center;
+    height: 40px;
+    padding: 0%;
+    
+}
+.heading_item{
+    
+    align-items: center;
+    font-size: 150%;
+    width: 25%;
+    background-color: rgb(51, 104, 249);
+}
+.expense-item{
+    align-items: center;
+    font-size: 150%;
+    width: 25%;
+    background-color: rgb(215, 221, 235);
+}
+.download {
+    position: relative;
+    left: 45%; 
+    height: 40px;
+    font-size: 130%;
+    background-color:rebeccapurple;
+    border: none;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+
+.pagination button {
+    background-color: #e64a1f;
+    border: none;
+    margin: 0.5rem;
+    border-radius: 4px;
+    width: 25px;
+    border: 2px solid black;
+}
+
+.pagination button:hover {
+    background-color: white;
+}
+.dynamic{
+    margin: 20px;
+    text-align: center;
+}
+.dynamic input{
+    width: 30px;
+}

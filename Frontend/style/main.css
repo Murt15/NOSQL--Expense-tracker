@@ -1,0 +1,121 @@
+/* https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg */
+
+.heading {
+  text-align: left;
+  -ms-text-size-adjust: auto;
+
+}
+.list1 {
+  position: relative;
+  left: 20px;
+  width: 290px;
+  text-align: left;
+}
+.input2{
+  text-align: center;
+  width: 305px;
+  height: 25px;
+}
+.input1 {
+  
+  text-align: center;
+  width: 300px;
+  height: 20px;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("https://images.ctfassets.net/ifu905unnj2g/4nwoS9CUIgOO8W6eigiICE/de03057910bdce8c2d574094ccd882d2/Lightbulb_on_yellow_background-min.png");
+  
+  /* Full height */
+  height: 100%;
+  
+  padding: 0%;
+  margin: 0%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+.btn {
+
+  background-color: #eb9c3c;
+  color: black;
+
+  border: black;
+  cursor: pointer;
+  width: 305px;
+  height: 30px;
+  margin-top: 15px;
+  text-align: center;
+  border-radius: 5px;
+
+}
+
+h1 {
+  text-align: center;
+
+}
+
+fieldset {
+  border-radius: 8px;
+  background-color: rgba(234, 229, 220, 0.9);
+  background-blend-mode: multiply;
+  padding-bottom: 50px;
+  border: 3px solid rgb(11, 11, 10);
+  font-size: 14px;
+  padding: 5px;
+  line-height: 1.8;
+  margin: 0 auto;
+  text-align: center;
+  width: 400px;
+  height: auto;
+  align-items: center;
+  border-radius: 30px;
+}
+
+body,
+html {
+  margin: 0%;
+  padding: 0%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+form{
+  margin: 15px;
+}
+/* Dark Mode */
+
+body.dark .bg{
+  /* The image used */
+  background-image: url("https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg");
+  
+  /* Full height */
+  height: 100%;
+  
+  padding: 0%;
+  margin: 0%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+body.dark fieldset{
+  background-color: rgba(226, 222, 222, 0.6);
+  background-blend-mode: multiply;
+}
+body.dark h1{
+  color: white;
+}
+body.dark .input1{
+  color: white;
+  background-color: rgb(41, 39, 39);
+}
+body.dark .input2{
+  color: white;
+  background-color: rgb(41, 39, 39);
+}
