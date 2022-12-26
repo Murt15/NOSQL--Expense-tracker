@@ -28,7 +28,7 @@ async function getExpense(page,number){
     //
     try {
         const response= await axios.get(`${url}/purchase/all-expense/${number}?page=${page}`,{headers:{'Authorization':token}});
-        console.log(response.data);
+        //console.log(response.data);
         var totalAmount=0;
         for (var i = 0; i < response.data.val.length; i++) {
             //console.log("1");
@@ -45,11 +45,12 @@ async function getExpense(page,number){
     }
 }
 function showExpense(data){
+    //console.log(data);
     const arr=data.createdAt.split('T');
     // console.log(data.createdAt);
     // console.log(arr);
    
-    var childHTML=`<ul class="list-heading" id=${data.id}>
+    var childHTML=`<ul class="list-heading" id=${data._id}>
                         <li class="expense-item">${arr[0]}</li>
                         <li class="expense-item">${data.description}</li>
                         <li class="expense-item">${data.category}</li>

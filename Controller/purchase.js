@@ -88,9 +88,7 @@ exports.getAllexpense=async(req,res,next)=>{
        
         const page=+req.query.page ||1;
         const totalItems =await  Expense.count({ userId: req.user._id })
-        const val= await  Expense.find({ 'userId': req.user[0]._id })
-        .limit(ITEMS_Per_Page)
-        .skip((page - 1) * ITEMS_Per_Page)
+        const val= await  Expense.find({ 'userId': req.user[0]._id }).limit(ITEMS_Per_Page).skip((page - 1) * ITEMS_Per_Page);
     
         res.json({
             val:val,

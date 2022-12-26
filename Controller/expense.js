@@ -12,10 +12,7 @@ exports.getAddExpense=((req,res,next)=>{
     Expense.count({ userId: req.user._id }).
     then((num)=>{
         totalItems=num;
-
-        return   Expense.find({ 'userId': req.user[0]._id })
-        .limit(ITEMS_Per_Page)
-        .skip((page - 1) * ITEMS_Per_Page)
+        return   Expense.find({ 'userId': req.user[0]._id }).limit(ITEMS_Per_Page).skip((page - 1) * ITEMS_Per_Page)
     })
     .then((val)=>{
         // console.log(val);
@@ -40,7 +37,12 @@ exports.postAddExpense=((req,res,next)=>{
     const description=req.body.description;
     const category=req.body.category;
     //console.log(req.user);
-    const expense=new Expense({ expenseAmount:expenseAmount,description:description,category:category, userId:req.user[0]._id})
+    const expense=new Expense({ 
+        expenseAmount:expenseAmount,
+        description:description,
+        category:category,
+        createdAt:new Date(),
+        userId:req.user[0]._id})
    expense.save()
     .then((result) => {
         // console.log(result);
